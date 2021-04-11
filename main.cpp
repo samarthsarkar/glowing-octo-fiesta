@@ -463,3 +463,47 @@ void append()
 	fout.close();
 	cout<<"\n Appending complete.";
 }
+void main()
+{     	clrscr();
+	char i,r;
+	int choice;
+	i=intro();
+	if((i=='y')||(i=='Y'))
+	{	do
+		{	clrscr();
+			cout<<"\n\t\t  -------------MENU-------------";
+			cout<<"\n\t\t|  1.create new file             |";
+			cout<<"\n\t\t|  2.append records to the file  |";
+			cout<<"\n\t\t|  3.search for a record         |";
+			cout<<"\n\t\t|  4.delete a record             |";
+			cout<<"\n\t\t|  5.modify a record             |";
+			cout<<"\n\t\t|  6.insert a new record         |";
+			cout<<"\n\t\t|  7.display all records         |";
+			cout<<"\n\t\t  ------------------------------";
+			cout<<"\n\n\t Enter your choice:";
+			cin>>choice;
+			switch(choice)
+			{	case 1 : create();
+					break;
+				case 2 : append();
+					break;
+				case 3 : search();
+					break;
+				case 4 : Delete();
+					break;
+				case 5 : modify();
+					break;
+				case 6 : insert();
+					break;
+				case 7 : display();
+					break;
+				default :cout<<"\n Error - choice out of range";
+			}
+			cout<<"\n\n Do you wish to continue ?(y/n)";
+			cin>>r;
+		}while(r=='y'||r=='Y');
+	}
+	cout<<"\n Program terminated";
+	getch();
+}
+//End of Program code
