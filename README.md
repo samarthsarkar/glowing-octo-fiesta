@@ -1,4 +1,4 @@
-# glowing-octo-fiesta
+# Remote Diagnosis Software
 
 ![image](https://user-images.githubusercontent.com/77774645/114290276-92deae00-9a8f-11eb-9dea-852d8b5a3cb1.png)
 
